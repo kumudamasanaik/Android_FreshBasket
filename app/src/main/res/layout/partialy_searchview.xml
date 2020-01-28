@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="@dimen/dimens_40"
+    style="@style/searchview_style">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_shop_by_category"
+        android:layout_width="@dimen/dimens_70"
+        android:layout_height="@dimen/dimens_30"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/dimens_5"
+        app:cardBackgroundColor="@color/app_txt_white"
+        app:cardCornerRadius="@dimen/dimens_5">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_button_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_16"
+            android:fontFamily="@font/calibree_medium"
+            android:textColor="@color/grey_hint_color"
+            android:text="@string/by_category" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_search_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_30"
+        android:layout_marginStart="@dimen/dimens_75"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/app_txt_white"
+        app:cardCornerRadius="@dimen/dimens_5">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ic_menu_search"
+            style="@style/search_iconStyle"
+            android:layout_gravity="start|center"
+            app:srcCompat="@drawable/ic_home_search" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/search_badge"
+            style="@style/search_editTextStyle"
+            android:layout_height="@dimen/dimens_25"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="@string/search_hint"
+            android:paddingBottom="@dimen/dimens_5"
+            android:imeOptions="actionSearch"
+            android:textColorHint="@color/grey_hint_color" />
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

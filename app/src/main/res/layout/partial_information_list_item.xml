@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_bullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bullets_point"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dimens_13"
+       />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_text"
+        android:layout_toEndOf="@+id/iv_bullet"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:fontFamily="@font/calibree_medium"
+        android:textColor="@color/app_text_blck"
+        android:textSize="@dimen/text_18"/>
+
+</RelativeLayout>

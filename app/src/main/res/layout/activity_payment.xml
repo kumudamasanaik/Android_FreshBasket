@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".screens.payment.PaymentActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/partial_wallet_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_12"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_payment_selection_header"
+            style="@style/payment_method_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_payment_method" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cash_on_del"
+            style="@style/recyclerView_vertical_style"
+            android:paddingBottom="@dimen/dimens_10"
+            tools:listitem="@layout/partial_layout_cash_on_delivery" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

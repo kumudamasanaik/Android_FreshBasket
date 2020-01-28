@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:elevation="@dimen/dimens_2"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="@dimen/dimens_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/return_dialog_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:fontFamily="@font/calibree_medium"
+            android:padding="@dimen/dimens_5"
+            android:text="@string/tx_return"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/dimens_12sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_return_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:fontFamily="@font/calibree_medium"
+            android:hint="@string/tx_reason"
+            android:textColor="@color/app_text_blck"
+            android:textColorHint="@color/app_text_blck"
+            android:textSize="@dimen/text_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_marginBottom="@dimen/dimens_10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/return_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimens_30"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text_border"
+                android:text="@string/cancel"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/return_btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimens_30"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text_border"
+                android:text="@string/ok"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

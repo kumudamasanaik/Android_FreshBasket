@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="@dimen/dimens_60"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/dimens_2"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    android:layout_margin="@dimen/dimens_15"
+    android:layout_centerInParent="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_wallet"
+        android:textSize="@dimen/text_18"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:textColor="@color/app_text_blck"
+        android:fontFamily="@font/calibree_medium"/>
+
+    <TextView
+        android:id="@+id/tv_descripation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wallet"
+        android:text="@string/text_amount"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:textColor="@color/app_text_blck"
+        android:fontFamily="@font/calibree_medium"
+        android:textSize="@dimen/text_18"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

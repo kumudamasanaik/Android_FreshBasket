@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimens_5"
+        android:paddingTop="@dimen/dimens_5">
+
+        <View
+            style="@style/view_divider"
+            android:background="@color/app_txt_white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_loginwith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_2"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="@string/or_log_in_with"
+            android:textColor="@color/color_light_blue" />
+
+        <View
+            style="@style/view_divider"
+            android:background="@color/app_txt_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/color_blue"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_20"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimens_1"
+                android:layout_marginLeft="@dimen/dimens_10"
+                app:srcCompat="@drawable/ic_fb" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_facebook"
+                style="@style/facebook_google_text"
+                android:layout_toEndOf="@+id/ic_facebook"
+                android:text="@string/facebook" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:layout_weight="1"
+            android:background="@color/google_plus"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_google"
+                android:layout_width="@dimen/dimens_20"
+                android:layout_height="@dimen/dimens_20"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:layout_marginEnd="@dimen/dimens_1"
+                app:srcCompat="@drawable/ic_google" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_google"
+                style="@style/facebook_google_text"
+                android:layout_toEndOf="@+id/ic_google"
+                android:text="@string/google" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_quantity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_separtor_top"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:ellipsize="end"
+        android:fontFamily="@font/calibree_medium"
+        android:gravity="left|center"
+        android:lineSpacingExtra="@dimen/dimens_4sp"
+        android:padding="@dimen/dimens_10"
+        android:textColor="@color/app_text_blck"
+        android:textSize="@dimen/dimens_12sp"
+        tools:text="1 Kg - Rs 50 " />
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/cb_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_separtor_top"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/dimens_10"
+        android:clickable="false"
+        android:padding="@dimen/dimens_5"
+        android:visibility="visible" />
+
+
+    <View
+        android:id="@+id/view_separtor_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:background="@color/grey_hint_color"
+        android:visibility="visible" />
+</RelativeLayout>

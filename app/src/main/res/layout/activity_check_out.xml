@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_check_out_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yellow"
+        android:fontFamily="@font/calibree_medium"
+        android:gravity="center"
+        android:padding="@dimen/dimens_8"
+        android:text="@string/shop_details"
+        android:textColor="@color/app_text_blck"
+        android:textSize="@dimen/text_14"
+        android:visibility="visible" />
+    <!--android:drawableEnd="@drawable/ic_right_arrow_black"-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_botom_view"
+        android:layout_below="@id/tv_check_out_header"
+        android:layout_margin="@dimen/dimens_10"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pay_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:fontFamily="@font/calibree_medium"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/payment_method"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/text_18" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/items_check_out" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_botom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_light_blue"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_gravity="center"
+                android:background="@color/app_txt_white"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_ver_toatl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/calibree_bold"
+                    android:gravity="end"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/text_20" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_total_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/calibree_bold"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@string/product_price_text"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/text_20" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_40"
+                android:layout_marginEnd="@dimen/dimens_20"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="end|center"
+                android:text="@string/pay"
+                android:textColor="@color/app_txt_white"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

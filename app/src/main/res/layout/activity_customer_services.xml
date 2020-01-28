@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.customerservices.CustomerServicesActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimens_10">
+
+        <TextView
+            android:id="@+id/reach_us_on_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_14"
+            android:text="@string/reach_for_any_query_on"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reach_us_on_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:textColor="@color/md_amber_900"
+            android:textSize="@dimen/text_16" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/or_line"
+            style="@style/orLineImageView"
+            android:layout_below="@+id/tv_email"
+            android:layout_marginTop="@dimen/dimens_3" />
+
+        <TextView
+            style="@style/orLineTextView"
+            android:layout_alignBottom="@+id/or_line"
+            android:layout_alignTop="@+id/or_line" />
+
+        <TextView
+            android:id="@+id/call_us_on_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:text="@string/call_us_on"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_us_on_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_6"
+            android:textColor="@color/md_amber_900"
+            android:textSize="@dimen/text_25" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/or_line_view"
+            style="@style/orLineImageView"
+            android:layout_below="@+id/tv_mobile"
+            android:layout_marginTop="@dimen/dimens_3" />
+
+        <TextView
+            style="@style/orLineTextView"
+            android:layout_alignBottom="@+id/or_line_view"
+            android:layout_alignTop="@+id/or_line_view" />
+
+
+        <Button
+            android:id="@+id/chat_us_on_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or_line_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_bg_border"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:text="@string/chat_us_on"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+    </RelativeLayout>
+
+</LinearLayout>

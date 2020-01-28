@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.filtersactivity.FilterItemsActivity">
+
+
+    <com.freshbasket.customer.customviews.MultiStateView
+        android:id="@+id/base_multistateview"
+        style="@style/MultiStateViewStyle"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/partial_swiping_tab_layout" />
+
+
+    </com.freshbasket.customer.customviews.MultiStateView>
+</android.support.constraint.ConstraintLayout>

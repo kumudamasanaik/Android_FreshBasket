@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_1"
+        android:background="@color/app_txt_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_10"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:fontFamily="@font/calibree_bold"
+            android:text="@string/order_now"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_25" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/standard_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_200"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_radio_btn_on"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimens_25"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        app:srcCompat="@drawable/ic_radio_button_on" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:text="@string/standard"
+                            android:textColor="@color/color_text_gray"
+                            android:textSize="@dimen/text_20" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:text="@string/tomarro_9"
+                            android:textColor="@color/color_gray"
+                            android:textSize="@dimen/text_14"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_25"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_truck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/express_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_200"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_radio_btn_off"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimens_25"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        app:srcCompat="@drawable/ic_radio_button_off" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:text="@string/express"
+                            android:textColor="@color/color_text_gray"
+                            android:textSize="@dimen/text_20" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:text="@string/in_90_minutes"
+                            android:textColor="@color/color_gray"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_25"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_bike" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_order_check_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:layout_marginRight="@dimen/dimens_15"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="end"
+                android:text="@string/check_out"
+                android:textColor="@color/color_light_blue"
+                android:textSize="@dimen/text_18" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

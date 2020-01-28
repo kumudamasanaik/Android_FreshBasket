@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "916640065597",
+    "firebase_url": "https://keepcart-dc5a8.firebaseio.com",
+    "project_id": "keepcart-dc5a8",
+    "storage_bucket": "keepcart-dc5a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916640065597:android:0369b8a5ea7d8f41",
+        "android_client_info": {
+          "package_name": "com.freshbasket.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916640065597-i5nnacuidobnl2tcftmv36ef4ec58gcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freshbasket.customer",
+            "certificate_hash": "b148ceb0987deeb5adb01d1c18a2be32566f0d0e"
+          }
+        },
+        {
+          "client_id": "916640065597-5o2jkl7ukp40jcm0o858307dd4t4kvmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF1FV6UPwPvPRod0Sb8aeuS3ZMzoM-xf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916640065597-5o2jkl7ukp40jcm0o858307dd4t4kvmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

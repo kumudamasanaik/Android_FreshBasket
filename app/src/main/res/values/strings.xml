@@ -1,0 +1,507 @@
+<resources>
+    <string name="app_name">Keepcart</string>
+
+    <!--login-->
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_empty_password">password should not be empty</string>
+    <string name="login">LOGIN</string>
+    <string name="or_log_in_with">or log in with</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google+</string>
+    <string name="skip_login">&lt;&lt;Skip Login&gt;&gt;</string>
+    <string name="please_wait">Please Wait</string>
+
+    <!--register-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="mobile_num">Mobile No</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="upload_pan_card">Upload \nPan Card</string>
+    <string name="upload_aadhar_card">Upload \nAadhar Card</string>
+    <string name="bank_account_num">Bank Account Number</string>
+    <string name="ifsc_code">IFSC CODE</string>
+    <string name="sign_up_btn">SIGN UP</string>
+    <string name="or_sign_up_with">or sign up with</string>
+    <string name="signing_up_text_View">By Signing up,you agree to keep cart\'s <font color='#33ccff'> Terms  Conditions <font color='#FFFFFFFF'>&amp;</font> Privacy Policy</font></string>
+
+
+    <!--Success Messages-->
+    <string name="login_success">Login Successful</string>
+
+    <!--product_category_list-->
+    <string name="product_item_weight"> 0kg </string>
+    <string name="product_price_text">150</string>
+    <string name="product_item_offer_price">  250 </string>
+    <string name="product_item_saved_price">  250 </string>
+    <string name="product_item_add">  ADD </string>
+    <string name="product_item_plus_icon">  + </string>
+    <string name="product_item_wieght"> 10kg </string>
+    <string name="product_original_price_text"> \u20B9 0 </string>
+    <string name="Rs">\u20B9 </string>
+    <string name="RsSybol">\u20B9</string>
+
+    <!--product details-->
+    <string name="price">150</string>
+    <string name="product_name">Kinnaur Apple</string>
+    <string name="product_item_wght">100 kg</string>
+    <string name="quantity">10</string>
+    <string name="address_text">Senthil Nathan</string>
+    <string name="no_72_address">No:72 Amman Kovil Street, Venkatapuram,GCT(Post),COIMBATORE,TAMIL NADU 641025 India</string>
+    <string name="edit_text">EDIT</string>
+    <string name="set_as_default">SET AS DEFAULT</string>
+
+
+    <!--otp verification-->
+    <string name="verifiy_query">Please Wait while we verify your mobile number</string>
+    <string name="resend">Resend</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="verify_text_otp">VERIFY</string>
+    <string name="continue_txt">CONTINUE</string>
+    <string name="total_amount">Total :</string>
+    <string name="order_id">Order Id : </string>
+    <string name="order_num">ORD1252544</string>
+    <string name="text_date">Dec 3,2017,5.40pm</string>
+    <string name="text_price">\u20B9 150.0</string>
+    <string name="rupees_price">\u20B9</string>
+    <string name="text_offers_description">High Quality fruits and vegetables are available for Express deliver1 High Quality fruits and vegetables are available for Express <delivery></delivery></string>
+
+    <string name="in_progress">In Progress</string>
+    <string name="express_delivery">High Quality fruits and vegetables are available for Express delivery</string>
+
+
+    <!--change password-->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="reenter_password">Confirm New Password</string>
+    <string name="change">CHANGE</string>
+
+
+    <!--Address Deatils-->
+    <string name="address_nick_name">Address Nickname</string>
+    <string name="address_first_name">First Name</string>
+    <string name="address_last_name">Last Name</string>
+    <string name="address_mobile_number">Mobile Number</string>
+    <string name="address_locality">Locality</string>
+    <string name="address_house_no_details">House No &amp; Details</string>
+    <string name="residential_complex">Residential Complex</string>
+    <string name="address_area">Area</string>
+    <string name="address_pincode">Pincode</string>
+    <string name="address_street_name">Street Name(Optional)</string>
+    <string name="address_landmarks">Landmarks(Optional)</string>
+    <string name="make_this_as_default_address">Make this as default address</string>
+    <string name="save_address">SAVE</string>
+    <string name="add_cart">ADD PRODUCTS</string>
+    <string name="no_product">No products found</string>
+    <string name="cart_empty">Cart is empty</string>
+    <string name="add_address">No Address found</string>
+
+
+    <!--Shop by Category-->
+    <string name="fruits_vegetables">Fruits &amp; Vegetables</string>
+    <string name="fruit_vegetable_baskets">Fruit &amp; vegetable baskets,fruits,vegetables,Cut Fresh,Sprouts &amp; Herbs</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="order_id_payment">Order Id: </string>
+    <string name="ok_text">OK</string>
+    <string name="ord_3245345">ORD 3245345</string>
+
+
+    <!--checkoutOrders Details-->
+    <string name="placed_on">Placed On:</string>
+    <string name="delivered_on">Delivered On:</string>
+    <string name="shipping_adress">Shipping Address:</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="qty_2">QTY:</string>
+    <string name="status">Status:</string>
+    <string name="transist">In Transist</string>
+
+
+    <!--Wallet details-->
+    <string name="wallet">Wallet</string>
+    <string name="wallet_balance">Balance: </string>
+    <string name="history">History</string>
+    <string name="credited">Credited</string>
+    <string name="purchased">Purchased</string>
+    <string name="_2000_00">+2000.00</string>
+    <string name="add_money">Add Money</string>
+
+
+    <!--refer and earn-->
+    <string name="refer_your_friends_earn">Refer Your Friends &amp; Earn</string>
+    <string name="referral">Ask your friends to signup with\nyour referral code and earn\n \u20B9 20 for each</string>
+    <string name="share_now">SHARE NOW</string>
+    <string name="sj12e3er3">SJ12E3ER3</string>
+    <string name="referral_link">Get Referral Link</string>
+    <string name="your_referral_code">Your Referral Code</string>
+
+
+    <!--pre checkoutOrders-->
+    <string name="in_90_minutes">In 90 Minutes</string>
+    <string name="express">Express</string>
+    <string name="standard">Standard</string>
+    <string name="tomarro_9">Tomarrow 9:30am-12:00pm</string>
+    <string name="order_now">Order Now</string>
+    <string name="check_out">CHECKOUT</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="pre_order">Pre Order</string>
+    <string name="november_30_2017">November 30,2017</string>
+
+    <!--faq-->
+    <string name="_1_what_is_lorem_ipsum">What is Lorem Ipsum?</string>
+
+    <string name="sub_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has
+        been the industrys standard dummy text ever since the 1500s,when an unknown printer took gallery of type and
+        scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into
+        electronic typesetting,remaining essentially unchanged.</string>
+
+
+    <!--payment method-->
+    <string name="payment_method">Payment method</string>
+    <string name="pay_later">Pay later</string>
+    <string name="pay_14days_after_delivery">Pay 14days after delivery</string>
+    <string name="credit_card_number">Credit card number</string>
+    <string name="pay">Pay &gt;&gt;</string>
+
+    <!--cart_order-->
+    <string name="pre_order_cart">PRE ORDER</string>
+    <string name="order_now_cart">ORDER NOW</string>
+    <string name="go_to_cart">GO TO CART</string>
+
+    <string name="shop_details">Shop for Rs442 more and availRs50 offer during order</string>
+    <string name="_8_items">8 Items</string>
+    <string name="cart_amt">Total: \u20B9 150.00</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="sort_by_price">Sort By Price</string>
+    <string name="filters">FILTERS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--MULTI STATE VIEW -->
+
+    <string name="no_result_found">No result found</string>
+    <string name="refresh">Refresh</string>
+    <string name="woops_something_went_wrong">Whoops! Something went wrong !!</string>
+    <string name="retry">Retry</string>
+    <string name="search_hint">Search for 100+ products</string>
+
+
+    <!--HOME ACTIVITY-->
+    <string name="shop_by_cat">Shop By Category</string>
+    <string name="best_deals">Best Deals</string>
+    <string name="view_all">View all</string>
+    <string name="dummy_prdoct_name">Fruits and Vegitables</string>
+
+
+    <!--PROFIL PIC -->
+
+    <string name="delivery_location">Delivery Location</string>
+    <string name="dummy_address">Please select the address</string>
+    <string name="dummy_profil_name">Fugenx Techhnology</string>
+    <string name="dummy_email_id">senthilnathan@gmail.com</string>
+
+
+    <!-- LEFT NAVIGATION -->
+    <string name="home">Home</string>
+    <string name="my_account">My Account</string>
+    <string name="refer_earn">Refer &amp; Earn</string>
+    <string name="smart_basket">Smart Basket</string>
+    <string name="shop_by_category">Shop By Category</string>
+    <string name="by_category">Category</string>
+
+    <string name="offers">Offers</string>
+    <string name="special_shops">Specials Shop</string>
+    <string name="wish_list">Wishlist</string>
+    <string name="customer_services">Customer Service</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification">Notification</string>
+
+    <string name="faqs">FAQs</string>
+
+    <!--My ACcount NAVIGATIONS-->
+    <string name="my_orders">My Orders</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="third_prty_payment">Third Party Payment Order</string>
+    <string name="pay_now_fr_order">Pay Now For Order</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_pswrd">Change Password</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="my_delivery_address">My Delivery Address</string>
+    <string name="logout">Logout</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="remove_from_cart">Remove</string>
+
+
+    <string-array name="nav_title_list">
+        <item>@string/home</item>
+        <item>@string/smart_basket</item>
+        <item>@string/shop_by_category</item>
+        <item>@string/my_account</item>
+        <item>@string/refer_earn</item>
+        <!-- <item>@string/offers</item>-->
+        <!--<item>@string/special_shops</item>-->
+        <item>@string/wish_list</item>
+        <item>@string/customer_services</item>
+        <item>@string/notifications</item>
+        <item>@string/faqs</item>
+    </string-array>
+
+    <integer-array name="nav_icon_list">
+        <item>@drawable/ic_nav_home</item>
+        <item>@drawable/ic_nav_smart_basket</item>
+        <item>@drawable/ic_nav_category</item>
+        <item>@drawable/ic_nav_my_account</item>
+        <item>@drawable/ic_nav_refer_earn</item>
+        <!--  <item>@drawable/ic_nav_offers</item>-->
+        <item>@drawable/ic_favorite_un_selected</item>
+        <item>@drawable/ic_nav_customer_services</item>
+        <item>@drawable/ic_nav_notifications</item>
+        <item>@drawable/ic_nav_faqs</item>
+        <!--<item>@drawable/ic_nav_special_shop</item>-->
+        <!--<item>@drawable/ic_nav_customer_help</item>-->
+    </integer-array>
+
+
+    <string-array name="my_account">
+        <item>@string/my_orders</item>
+        <item>@string/my_wallet</item>
+        <!--<item>@string/third_prty_payment</item>-->
+        <!--<item>@string/pay_now_fr_order</item>-->
+        <item>@string/my_profile</item>
+        <item>@string/change_pswrd</item>
+        <item>@string/delivery_address</item>
+        <item>@string/logout</item>
+    </string-array>
+
+
+    <!--CATEGORY-->
+
+    <string-array name="dummy_cat">
+        <item>"Fresh vegetables"</item>
+        <item>"Herbs &amp; Seasonings"</item>
+        <item>"Cuts &amp; Sprouts"</item>
+        <item>"Organic Vegetables"</item>
+        <item>"Flowers Fruits"</item>
+    </string-array>
+
+    <!--TOOL BAR TITTLE-->
+    <string name="register">Register</string>
+    <string name="shopByCategory">Shop By Category</string>
+    <string name="cart">Cart</string>
+    <string name="cart_summary">Cart Summary</string>
+    <string name="search">Search</string>
+    <string name="offer">Offers</string>
+    <string name="offerDetails">Offers Details</string>
+
+    <string name="smartBasket">Smart Basket</string>
+    <string name="customerServices">Customer Service</string>
+    <string name="selectAddress">Select Delivery Address</string>
+    <string name="combo">Combo Offer</string>
+
+    <string name="addAddress">Add Delivery Address</string>
+    <string name="verifyOtp">Verify OTP</string>
+    <string name="paymentStatus">Payment Status</string>
+    <string name="myAccount">My Account</string>
+    <string name="myProfile">My Profile</string>
+
+    <string name="myOrders">My Orders</string>
+    <string name="orderDetails">Order Details</string>
+    <string name="changePassword">Change Password</string>
+    <string name="myWallet">My Wallet</string>
+    <string name="referEarn">Refer &amp; Earn</string>
+    <string name="faq">FAQs</string>
+    <string name="wishList">Wishlist</string>
+    <string name="trackOrder">Track Order</string>
+    <string name="checkOut">Check Out</string>
+    <!--LANDING ACTIVITY-->
+    <string name="landing_toolbar">LANDING</string>
+
+    <!--FACEBOOK INTEGRATION-->
+    <string name="facebook_app_id">2005751886205306</string>
+    <string name="fb_login_protocol_scheme">fb2005751886205306</string>
+    <!--Error messages-->
+    <string name="error_no_internet">Please check your internet connection!</string>
+    <string name="err_please_enter_valid_firstname">Please enter  firstname</string>
+    <string name="err_please_enter_valid_lastname">Please enter  lastname</string>
+    <string name="err_please_enter_gender">Please select gender</string>
+    <string name="err_please_enter_valid_email">Please enter valid email</string>
+    <string name="err_please_enter_valid_mobile">Please enter valid mobile number</string>
+    <string name="err_please_enter_valid_pass">Password must contain atleast 6 Characters </string>
+    <string name="err_conf_pass_match">Confirm Password should match with Password</string>
+    <string name="err_old_pass">Please enter old Password</string>
+    <string name="err_please_enter_valid_bank_acc_num">Please enter valid account bank number</string>
+    <string name="err_please_enter_valid_ifsc_code">Please enter valid ifsc code</string>
+    <string name="enter_valid_otp">Enter Proper otp</string>
+    <string name="Whoops_Something_went_wrong"> Whoops! Something went wrong !!</string>
+    <string name="passwrd_changed_successfully">password changed successfully</string>
+    <string name="do_u_want_to_logout"> Are you sure you want to logout?</string>
+    <string name="do_you_want_to_cancel_order"> Are you sure you want to Cancel order?</string>
+    <string name="do_you_want_to_return_order"> Are you sure you want to Return order?</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="no_data_found">No Data Found</string>
+
+    <string name="ok">ok</string>
+
+
+    <!--Error messages foe delivery address-->
+    <string name="err_please_enter_valid_nick_name">Please enter valid nickname</string>
+    <string name="err_please_enter_valid_name">Please enter valid data</string>
+    <string name="err_please_enter_valid_mobile_num">Please enter valid mobile number</string>
+    <string name="err_please_enter_valid_locality">Please enter valid locality</string>
+    <string name="err_please_enter_valid_house_number">Please enter valid house number</string>
+    <string name="err_please_enter_valid_residential_complex">Please enter valid residential complex</string>
+    <string name="err_please_enter_valid_area">Please enter valid area</string>
+    <string name="err_please_enter_valid_pin_code">Please enter valid pin code</string>
+    <string name="err_please_enter_valid_street_name">Please enter valid street name</string>
+    <string name="err_please_enter_valid_landmark">Please enter valid landmark</string>
+    <string name="spin_locality">Locality</string>
+    <string name="error_details">Please enter  proper details</string>
+
+
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="back_exit_confirmation">"Please click back again to exit.."</string>
+    <string name="need_to_implement">"Need to Implement"</string>
+
+    <!--GOOGLE MAP API KEY-->
+    <string name="map_api_key">AIzaSyDm7OhHR3OkIDhPu3n2BJ4H11eFS7aXrsM</string>
+    <string name="select_quantity">Select Quantity</string>
+
+    <!--PRODUCT LIST ADAPTER-->
+    <string name="rs">\u20B9  %1$s</string>
+
+
+    <string name="big_save_price">save price:Rs %1$s</string>
+    <string name="cannot_add_items_out_of_stock">You cannot add more than stock items.</string>
+    <string name="should_be_minimum_quantity">There should be minimum quantity for this size is :=  .</string>
+
+
+    <string name="dummy_locality_name">Mysore</string>
+    <string name="select_locality">Select Locality</string>
+    <string name="do_u_want_to_delete"> Are you sure you want to delete this address?</string>
+    <string name="title_activity_location">Map</string>
+    <string name="select_location">Select Location</string>
+    <string name="use_this_location">Use this Location</string>
+    <string name="please_provide_location_permission">Please provide the location permision</string>
+    <string name="Please_login_to_the_application">Please Login to the application </string>
+    <string name="address_added_successfully">Address added successfully</string>
+    <string name="address_updated_successfully">Address updated successfully</string>
+    <string name="Your_favourite_Product_is_added_to_wish_list">Your favourite Product is added to wish list </string>
+    <string name="tap_current_location">Tap the current location</string>
+    <!--PAYMENT SELECTION-->
+
+    <!--TEST MODE-->
+    <string name="razer_pay_api_key">rzp_test_yxZEVJxbzsdSs5</string>
+
+    <!-- &lt;!&ndash;LIVE MODE&ndash;&gt;
+    <string name="razer_pay_api_key">rzp_live_d891pROyYpL4fV</string>-->
+
+    <string name="choose_wallet_amt">Choose wallet amt </string>
+    <string name="choose_payment_method">Choose payment method </string>
+    <string name="cash_on_delivery">Cash on delivery </string>
+    <string name="online_payment">Online payment</string>
+    <string name="payment">Payment</string>
+
+
+    <!--PAYMENT UI/CART SUMMARY-->
+    <string name="total_mrp"> Total Amount</string>
+    <string name="delivery_charge"> Delivery Charges</string>
+    <string name="promo_code_applied"> Promo code Applied</string>
+    <string name="promo_code">PROMO CODE</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="btn_apply">APPLY</string>
+
+    <string name="pls_enter_promo_code">Enter your promo code</string>
+    <string name="delivery_price"> \u20B9 0 </string>
+    <string name="promo_price"> -\u20B9 0 </string>
+    <string name="total_pay">Grand Total</string>
+    <string name="product_details">Product Details</string>
+    <string name="tax_details"> Tax</string>
+    <string name="tax_price"> 25%</string>
+
+    <!-- Customer Service Screen -->
+    <string name="reach_for_any_query_on">REACH US FOR ANY QUERY ON</string>
+    <string name="call_us_on">Call us on</string>
+    <string name="chat_us_on">Chat with us</string>
+
+    <string name="customer_care_email">customercare@keepcart.com</string>
+    <string name="customer_care_mobile">+91 80 4200 4100</string>
+
+    <string name="subscribe_at">Subscribe @</string>
+    <string name="products">products</string>
+    <string name="time_slot">Delivery Time slot</string>
+    <string name="dummy_time_slot">Select a TimeSlot</string>
+    <!--CART SUMMARY ACIVITY-->
+    <string name="delivery_time_slot"> Delivery Time Slot</string>
+    <string name="filterd_vailible_products">125 Availible Products</string>
+    <string name="filterd_search_here">Search products here</string>
+    <string name="filtered_name">Item name</string>
+    <string name="filterd_clear_all">Clear All</string>
+    <string name="filterd_done">Done</string>
+
+
+    <string name="refining_fragment">Filters</string>
+    <string name="sort_fragment">Sort</string>
+    <string name="items">Item</string>
+    <string name="tx_return">RETURN</string>
+    <string name="tx_track_order">TRACK ORDER</string>
+    <string name="tx_reason">Reason</string>
+
+
+    <string name="defualt_notification_channel">KEEP CART CHANNEL</string>
+    <string name="firebase_sender_id">916640065597</string>
+    <string name="text_wallet">Wallet</string>
+    <string name="text_amount">Wallet Amount</string>
+    <string name="text_update">Update</string>
+    <string name="search_prdct">Search</string>
+
+    <string name="no_product_found">No products found</string>
+    <string name="apply_coupon">APPLY COUPON</string>
+    <string name="apply_cop">Apply Coupon</string>
+    <string name="available_coupon">AVAILABLE COUPONS</string>
+    <string name="coupon_string">APYSDFG</string>
+
+    <!--offers-->
+    <string name="txt_offers_desc">1kg - approx.10 to 12 nos</string>
+    <string name="offer_price">Offer Price:</string>
+    <string name="rs_120_00">Rs.120.00</string>
+    <string name="total">Total:</string>
+    <string name="rs_150_00">Rs.150.00</string>
+
+    <!--smart basket-->
+
+    <string name="combo_pack">Combo Pack</string>
+    <string name="fresh_fruits">Fresh Fruits</string>
+    <string name="description">Description:</string>
+    <string name="products_smart_basket">Products</string>
+    <string name="product_qty">Quantity</string>
+    <string name="product_unit">Unit</string>
+    <string name="product_nm">Apples</string>
+    <string name="product_qtys">1</string>
+    <string name="product_units">200gm</string>
+    <string name="info_text">Get whiter,healthier teeth</string>
+    <string name="kashmir_apples">Kashmir Apples</string>
+    <string name="text_offers">BUY 1 GET 1</string>
+    <string name="text_offers_price">Rs 150</string>
+    <string name="amount">Amount:</string>
+    <string name="payment_mode">Payment Mode:</string>
+    <string name="cash_on_del">Cash On Delivery</string>
+
+
+</resources>

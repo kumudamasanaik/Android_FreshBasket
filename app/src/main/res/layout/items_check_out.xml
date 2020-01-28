@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".screens.checkout.CheckOutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimens_10"
+        android:background="@color/app_txt_white"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimens_10"
+            android:background="@drawable/bg_text_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimens_10"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="@dimen/dimens_25"
+                    android:layout_gravity="top"
+                    android:layout_weight=".5"
+                    app:srcCompat="@drawable/ic_radio_button_off" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_pay_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/calibree_medium"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:text="@string/pay_later"
+                        android:textSize="@dimen/text_18"
+                        android:textColor="@color/button_text_color" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_by_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/calibree_medium"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:layout_marginTop="@dimen/dimens_5"
+                        android:textSize="@dimen/text_14"
+                        android:text="@string/pay_14days_after_delivery"
+                        android:textColor="@color/color_gray" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimens_40"
+                    android:layout_gravity="center"
+                    android:layout_weight=".9"
+                    app:srcCompat="@drawable/ic_balance_wallet" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

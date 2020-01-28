@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/tools">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_8"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        map:cardElevation="@dimen/dimens_4">
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="@dimen/dimens_40"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_location_marker" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/botom_carview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/select_location"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dragg_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dimens_10"
+                android:text="@string/please_wait"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/dimens_12sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/submit_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/dimens_5"
+                android:text="@string/use_this_location"
+                android:textColor="@color/app_txt_white"
+                android:textSize="@dimen/dimens_12sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

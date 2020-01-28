@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smartbasket_rl"
+    style="@style/carview_style"
+    android:layout_height="match_parent"
+    android:background="@color/app_txt_white"
+    android:paddingBottom="@dimen/dimens_25">
+
+    <LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_smart_basket"
+            style="@style/product_image_style"
+            android:layout_width="@dimen/dimens_160"
+            android:layout_height="@dimen/dimens_110"
+            android:layout_margin="@dimen/dimens_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimens_5"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_combo_pack"
+                style="@style/product_name__style"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimens_1"
+                android:layout_marginStart="@dimen/dimens_3"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/combo_pack"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_20" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_fresh_fruits"
+                style="@style/product_name__style"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimens_1"
+                android:layout_marginStart="@dimen/dimens_3"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/fresh_fruits"
+                android:layout_marginTop="@dimen/dimens_0"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_25" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_decs"
+        style="@style/product_name__style"
+        android:layout_below="@+id/ll_image"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginEnd="@dimen/dimens_15"
+        android:layout_marginStart="@dimen/dimens_15"
+        android:fontFamily="@font/calibree_bold"
+        android:text="@string/description"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_18" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_details"
+        style="@style/product_name__style"
+        android:layout_below="@+id/tv_decs"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginEnd="@dimen/dimens_15"
+        android:layout_marginStart="@dimen/dimens_15"
+        android:fontFamily="@font/calibree_medium"
+        android:maxLines="4"
+        android:text="@string/text_offers_description"
+        android:textSize="@dimen/text_18" />
+
+    <include
+        android:id="@+id/lay_offers2"
+        layout="@layout/partial_smart_basket_product_quantity_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_details"
+        android:layout_marginEnd="@dimen/dimens_15"
+        android:layout_marginStart="@dimen/dimens_15"
+        android:layout_marginTop="@dimen/dimens_10" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_cart_summery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view_payment"
+        style="@style/payment_bill_layout_style">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="start|center_horizontal"
+            android:text="@string/total_mrp"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_total_mrp"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="end|center_horizontal"
+            android:gravity="end|center_horizontal"
+            android:paddingEnd="@dimen/dimens_15"
+            android:text="@string/delivery_price"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_saving_price"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/view_payment"
+        android:layout_marginBottom="@dimen/dimens_5">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="start|center_horizontal"
+            android:text="@string/delivery_charge"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_total_savings"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="end|center_horizontal"
+            android:gravity="end|center_horizontal"
+            android:paddingEnd="@dimen/dimens_15"
+            android:paddingStart="@dimen/dimens_15"
+            android:text="@string/delivery_price"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_promo_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_15"
+        android:layout_marginEnd="@dimen/dimens_16"
+        android:paddingTop="@dimen/dimens_8"
+        android:paddingBottom="@dimen/dimens_8"
+        android:background="@color/divider"
+        android:layout_below="@+id/view_saving_price"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_coupon"
+            android:layout_width="@dimen/dimens_30"
+            android:layout_height="@dimen/dimens_20"
+            app:srcCompat="@drawable/ic_coupon"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/et_promo_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_coupon"
+            android:layout_marginTop="@dimen/dimens_2"
+            android:digits="qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM"
+            android:text="@string/apply_coupon"
+            android:textColor="@color/color_green"
+            android:layout_marginStart="@dimen/dimens_3"
+            android:fontFamily="@font/calibree_bold"
+            android:textColorHint="@color/colorHighlight"
+            android:textSize="@dimen/text_16" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_promo_apply"
+        android:paddingBottom="@dimen/dimens_5"
+        android:layout_marginStart="@dimen/dimens_20"
+        android:text="@string/terms_conditions"
+        android:textColor="@color/app_text_blck"
+        android:textSize="@dimen/text_12" />
+
+    <LinearLayout
+        android:id="@+id/ll_promo_applied"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/tv_terms_conditions"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:visibility="gone">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="start|center_horizontal"
+            android:text="@string/promo_code_applied"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/text_14" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_promo_price"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="end|center_horizontal"
+            android:gravity="end|center_horizontal"
+            android:paddingEnd="@dimen/dimens_15"
+            android:paddingStart="@dimen/dimens_15"
+            android:text="@string/promo_price"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/text_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_tax"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/ll_promo_applied"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/payment_view_normal_text_style"
+            android:gravity="start|center_horizontal"
+            android:text="@string/tax_details"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_tax"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="end|center_horizontal"
+            android:gravity="end|center_horizontal"
+            android:paddingEnd="@dimen/dimens_15"
+            android:paddingStart="@dimen/dimens_15"
+            android:text="@string/tax_price"
+            android:textColor="@color/app_text_blck"
+            android:textSize="@dimen/text_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_2"
+        android:layout_below="@+id/view_tax"
+        android:background="@drawable/bg_dashed_line_refferal" />
+
+
+    <LinearLayout
+        android:id="@+id/view_original_price"
+        style="@style/payment_bill_layout_style"
+        android:layout_below="@+id/view_tax"
+        android:layout_marginBottom="@dimen/dimens_5"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/payment_view_normal_text_style"
+            android:fontFamily="@font/calibree_bold"
+            android:gravity="start|center"
+            android:text="@string/total_pay"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_14" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_grand_total"
+            style="@style/payment_view_normal_text_style"
+            android:layout_gravity="end|center_horizontal"
+            android:fontFamily="@font/calibree_bold"
+            android:gravity="end|center"
+            android:paddingRight="@dimen/dimens_15"
+            android:text="@string/delivery_price"
+            android:textColor="#dc0000"
+            android:textSize="@dimen/text_14" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_seperator"
+        style="@style/product_weight_view_separator_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_0.5"
+        android:layout_below="@+id/view_original_price"
+        android:background="@color/color7c7c7" />
+
+
+</RelativeLayout>

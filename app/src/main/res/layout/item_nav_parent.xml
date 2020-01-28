@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlns="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_40"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/dimens_10"
+    android:gravity="center_horizontal"
+    mlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dimens_6">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_nav_icon"
+            style="@style/navi_drawer_image_style"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimens_5"
+            android:tint="@color/color_light_blue" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/navi_drawer_items_style"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:fontFamily="@font/calibree_medium"
+            android:layout_toEndOf="@+id/iv_nav_icon"
+
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_shop_by_cat_move"
+            style="@style/navi_shop_By_cate_image_style"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dimens_20"
+            android:layout_height="@dimen/dimens_20"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_nav_expand"
+            style="@style/navi_dropdown_image_style"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

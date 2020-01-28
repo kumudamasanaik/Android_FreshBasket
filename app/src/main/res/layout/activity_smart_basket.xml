@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.smartbasket.SmartBasketActivity">
+
+    <include
+        android:id="@+id/lay_offers"
+        layout="@layout/partial_smart_basket_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_margin="@dimen/dimens_8" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottom_layout_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/app_txt_white"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimens_10">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_total_amt_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_price_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs_120_00"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_18" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="@dimen/dimens_10"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimens_10"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:background="@color/color_black" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_offers_txt_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offer_price"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/text_18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_offers_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimens_10"
+                android:text="@string/rs_150_00"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/text_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rel_cart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_45"
+            android:background="@color/color_light_blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goto_cart"
+                style="@style/cart_text_style"
+                android:imeOptions="normal"
+                android:text="@string/go_to_cart" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

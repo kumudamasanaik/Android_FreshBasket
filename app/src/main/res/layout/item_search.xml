@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ic_search"
+        android:layout_width="@dimen/dimens_12"
+        android:layout_height="@dimen/dimens_12"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:tint="@color/md_blue_grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home_search" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/calibree_medium"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/dimens_12sp"
+        app:layout_constraintStart_toEndOf="@+id/ic_search"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="search items" />
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/view_divider"/>
+
+</android.support.constraint.ConstraintLayout>

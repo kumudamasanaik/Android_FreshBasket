@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimens_3"
+    app:cardCornerRadius="@dimen/dimens_5"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_txt_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_10">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/dimens_8"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/order_id"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_5"
+                android:layout_toEndOf="@id/tv_order_id"
+                android:fontFamily="@font/calibree_medium"
+                android:maxLines="1"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_18"
+                tools:text="@string/order_num" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/dimens_3"
+                android:ellipsize="end"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/text_date"
+                android:textColor="@color/color_adress_text"
+                android:textSize="@dimen/text_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_items_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/_8_items"
+                android:textColor="@color/color_adress_text"
+                android:textSize="@dimen/text_14" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_total_items"
+                style="@style/product_price_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:layout_marginEnd="@dimen/dimens_8"
+                android:layout_weight="1"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="end"
+                android:textColor="@color/color_adress_text"
+                android:textSize="@dimen/text_14" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_grand_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_marginEnd="@dimen/dimens_5"
+                android:ellipsize="end"
+                android:fontFamily="@font/calibree_medium"
+                android:text="@string/text_price"
+                android:textColor="@color/color_adress_text"
+                android:textSize="@dimen/text_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_marginBottom="@dimen/dimens_5"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_del_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_8"
+                android:layout_marginBottom="@dimen/dimens_10"
+                android:layout_weight="1"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/in_progress"
+                android:textColor="@color/color_adress_text"
+                android:textSize="@dimen/text_14" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimens_15"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimens_5"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_red_500"
+                    android:fontFamily="@font/calibree_medium"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/text_12" />
+
+                 <android.support.v7.widget.AppCompatButton
+                      android:id="@+id/btn_track_order"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/dimens_5"
+                      android:background="@color/color_yellow"
+                      android:fontFamily="@font/calibree_medium"
+                      android:text="@string/tx_track_order"
+                     android:gravity="center"
+                      android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

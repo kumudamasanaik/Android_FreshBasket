@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background">
+
+    <TextView
+        android:id="@+id/delivery_slot_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_margin="@dimen/dimens_0"
+        android:fontFamily="@font/calibree_medium"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimens_6"
+        android:text="@string/delivery_time_slot"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/dimens_14sp" />
+
+</LinearLayout>

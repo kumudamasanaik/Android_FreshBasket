@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimens_5"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/view_pager_banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_shop_by_cat"
+            style="@style/cardview_shop_by_cat"
+            android:layout_marginBottom="@dimen/dimens_3"
+            app:cardCornerRadius="@dimen/dimens_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/shop_by_cat_style"
+                    android:text="@string/shop_by_cat"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/app_txt_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_category_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_3"
+                    android:layout_marginBottom="@dimen/dimens_5"
+                    android:orientation="vertical"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_main_category" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_shop_by_cat_view_all"
+                    style="@style/view_all_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_deals"
+            style="@style/cardview_shop_by_cat"
+            app:cardCornerRadius="@dimen/dimens_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/shop_by_cat_style"
+                    android:text="@string/best_deals"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/app_txt_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_deals_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_3"
+                    android:orientation="vertical"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/item_main_category" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_deals_view_all"
+                    style="@style/view_all_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

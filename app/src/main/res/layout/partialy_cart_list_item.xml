@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/carview_style"
+    android:layout_margin="@dimen/dimens_2"
+    app:cardCornerRadius="@dimen/dimens_5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_combo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_3">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_product"
+            style="@style/product_image_style"
+            android:layout_margin="@dimen/dimens_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/product_name"
+            style="@style/product_name__style"
+            android:layout_marginEnd="@dimen/dimens_1"
+            android:layout_marginTop="@dimen/dimens_10"
+            android:layout_toEndOf="@+id/image_product"
+            android:layout_toStartOf="@+id/image_wishhlist"
+            android:fontFamily="@font/calibree_medium"
+            android:textSize="@dimen/text_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_wishhlist"
+            android:layout_width="@dimen/dimens_16"
+            android:layout_height="@dimen/dimens_16"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_4"
+            android:layout_marginTop="@dimen/dimens_2"
+            android:padding="@dimen/dimens_1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_favorite_un_selected" />
+
+
+        <!-- <com.sackcentury.shinebuttonlib.ShineButton
+             android:id="@+id/image_wishhlist"
+             android:layout_width="@dimen/dimens_20"
+             android:layout_height="@dimen/dimens_20"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="@dimen/dimens_8"
+             android:layout_marginTop="@dimen/dimens_3"
+             android:padding="@dimen/dimens_1"
+             app:big_shine_color="#FF6666"
+             app:allow_random_color="false"
+             app:enable_flashing="false"
+             app:btn_color="@android:color/darker_gray"
+             app:btn_fill_color="#FFFFFF"
+             app:siShape="@raw/heart"
+             android:elevation="10dp" />-->
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_delete"
+            android:layout_width="@dimen/dimens_16"
+            android:layout_height="@dimen/dimens_16"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_4"
+            android:layout_marginTop="@dimen/dimens_2"
+            android:padding="@dimen/dimens_1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_delete_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toEndOf="@+id/image_product"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/weigh_control"
+                layout="@layout/product_weight_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:layout_marginEnd="@dimen/dimens_30"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/layout_prod_count"
+                layout="@layout/product_quantity_control_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:layout_marginEnd="@dimen/dimens_5"
+                android:layout_marginStart="@dimen/dimens_15"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_add_cart"
+                layout="@layout/product_quantity_add_control_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:layout_marginEnd="@dimen/dimens_5"
+                android:layout_marginStart="@dimen/dimens_15"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_mrp_price"
+            style="@style/product_price_style"
+            android:layout_below="@id/layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:layout_marginStart="@dimen/dimens_1"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toEndOf="@+id/image_product"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimens_2"
+            android:textColor="@color/color_text_gray"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_selling_price"
+            style="@style/product_price_style"
+            android:layout_below="@id/layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_5"
+            android:layout_toEndOf="@id/tv_mrp_price"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimens_2"
+            android:textColor="@color/color_text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_big_save"
+            style="@style/tv_big_saved"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/layout"
+            android:layout_marginEnd="@dimen/dimens_3"
+            android:padding="@dimen/dimens_1"
+            android:text="@string/big_save_price"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

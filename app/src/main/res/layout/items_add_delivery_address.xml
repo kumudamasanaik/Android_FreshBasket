@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_layout_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_margin="@dimen/dimens_10"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_txt_white">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_nick_name"
+                style="@style/address_text_input_layout"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_nick_name"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_nick_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_first_name"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_nick_name"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_first_name"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_first_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_last_name"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_first_name"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_last_name"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_last_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_mobile_number"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_last_name"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_mobile_number"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_mobile_number"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/et_locality"
+                style="@style/adress_text_input_edit_text_style"
+                android:layout_below="@+id/ti_mobile_number"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginEnd="@dimen/dimens_10"
+                android:hint="@string/address_locality"
+                android:padding="@dimen/dimens_5"/>
+
+            <View
+                android:id="@+id/layout_locality"
+                style="@style/adress_text_input_edit_text_style"
+                android:layout_height="@dimen/dimens_1"
+                android:layout_below="@+id/et_locality"
+                android:layout_marginStart="@dimen/dimens_13"
+                android:layout_marginEnd="@dimen/dimens_13"
+                android:background="@color/color_gray" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_house_num"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/layout_locality"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_house_num"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_house_no_details"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_residential"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_house_num"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_residential"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/residential_complex"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_area"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_residential"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_area"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_area"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_pinCode"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_area"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_pinCode"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_pincode"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_street_name"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_pinCode"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_street_name"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_street_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_landmark"
+                style="@style/address_text_input_layout"
+                android:layout_below="@+id/ti_street_name"
+                android:theme="@style/text_input_layout_style">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_landmark"
+                    style="@style/adress_text_input_edit_text_style"
+                    android:hint="@string/address_landmarks"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/check_address_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_landmark"
+                android:layout_marginStart="@dimen/dimens_10"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginBottom="@dimen/dimens_15"
+                android:checked="false"
+                android:focusable="false"
+                android:paddingStart="@dimen/dimens_10"
+                android:text="@string/make_this_as_default_address"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/text_18" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_light_blue">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:fontFamily="@font/calibree_bold"
+            android:gravity="center"
+            android:text="@string/save_address"
+            android:textColor="@color/app_txt_white"
+            android:textSize="@dimen/text_14" />
+        <!--
+                android:drawableEnd="@drawable/ic_right_arrow"
+        -->
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

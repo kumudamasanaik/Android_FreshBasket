@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".screens.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dummy_image"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimens_20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_app_logo"
+                android:layout_width="@dimen/dimens_200"
+                android:layout_height="@dimen/dimens_200"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:layout_marginBottom="@dimen/dimens_20"
+                android:visibility="visible"
+                app:srcCompat="@drawable/keep_cart_logo" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                style="@style/email_pass_edit_text"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:hint="@string/email"
+                android:drawablePadding="@dimen/dimens_10"
+                />
+            <!--android:drawableLeft="@drawable/ic_email"-->
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                style="@style/email_pass_edit_text"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:drawablePadding="@dimen/dimens_10"
+                />
+            <!--   android:drawableLeft="@drawable/ic_lock"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_signUp"
+                    style="@style/sign_up_forgot_text"
+                    android:text="@string/sign_up" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_forgotPassword"
+                    style="@style/sign_up_forgot_text"
+                    android:gravity="end"
+                    android:text="@string/forgot_password" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                style="@style/login_btn"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:padding="@dimen/dimens_10"
+                android:text="@string/login" />
+
+
+            <include layout="@layout/partial_social_login_layout" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_skip_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimens_30"
+                android:fontFamily="@font/calibree_bold"
+                android:gravity="center"
+                android:padding="@dimen/padding_20"
+                android:text="@string/skip_login"
+                android:textColor="@color/app_txt_white"
+                android:textSize="@dimen/text_20" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

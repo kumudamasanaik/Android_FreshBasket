@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_tool_bar"
+    android:layout_height="@dimen/dimens_40"
+    style="@style/ToolbarStyle"
+    app:navigationIcon="@drawable/ic_three_line"
+    android:layout_width="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimens_5"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_screen_title"
+                style="@style/ToolbarTitleStyle"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/cat_drop_down"
+                android:layout_width="@dimen/dimens_10"
+                android:layout_height="@dimen/dimens_12"
+                android:layout_alignBottom="@+id/tv_screen_title"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimens_5"
+                android:layout_marginBottom="@dimen/dimens_1"
+                android:layout_toEndOf="@+id/tv_screen_title"
+                android:visibility="gone"
+                app:srcCompat="@drawable/toolbar_title_down_arrow" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_filter"
+                style="@style/app_menu_icon_style"
+                android:layout_marginTop="@dimen/dimens_1"
+                android:layout_marginEnd="@dimen/dimens_1"
+                android:paddingTop="@dimen/dimens_2"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_filter_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <FrameLayout
+                android:id="@+id/cart_layout"
+                style="?attr/actionButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ic_cart"
+                    style="@style/app_menu_icon_style"
+                    android:layout_marginTop="@dimen/dimens_1"
+                    android:layout_marginEnd="@dimen/dimens_1"
+                    android:paddingTop="@dimen/dimens_2"
+                    app:srcCompat="@drawable/ic_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/cart_badge"
+                    android:layout_width="@dimen/dimens_16"
+                    android:layout_height="@dimen/dimens_16"
+                    android:layout_gravity="end|top"
+                    android:layout_marginEnd="-4dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/dimens_8sp" />
+
+            </FrameLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_add_address"
+                style="@style/app_menu_icon_style"
+                android:layout_width="@dimen/dimens_25"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimens_10"
+                android:tint="@color/app_text_blck"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_nav_add" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+

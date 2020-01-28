@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/dimens_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/calibree_medium"
+            android:text="@string/product_nm"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/dimens_16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_products_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/calibree_medium"
+            android:text="@string/product_qtys"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/dimens_16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_products_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/calibree_medium"
+            android:text="@string/product_units"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/dimens_16" />
+    </LinearLayout>
+
+</RelativeLayout>

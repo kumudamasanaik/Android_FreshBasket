@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/carview_style"
+    android:layout_margin="@dimen/dimens_2"
+    app:cardCornerRadius="@dimen/dimens_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_5">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_product"
+            style="@style/product_image_style"
+            android:layout_margin="@dimen/dimens_5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:layout_toEndOf="@id/image_product"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimens_5"
+                    android:layout_marginEnd="@dimen/dimens_30"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/calibree_medium"
+                    android:text="@string/product_name"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_18" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimens_5"
+                    android:layout_marginEnd="@dimen/dimens_5"
+                    android:layout_marginStart="@dimen/dimens_15"
+                    android:layout_marginTop="@dimen/dimens_5"
+                    android:fontFamily="@font/calibree_medium"
+                    android:text="@string/product_price_text"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_18"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_mrp_price"
+                style="@style/product_price_style"
+                android:layout_marginBottom="@dimen/dimens_5"
+                android:layout_marginEnd="@dimen/dimens_10"
+                android:layout_marginStart="@dimen/dimens_1"
+                android:fontFamily="@font/calibree_medium"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimens_2"
+                android:text="@string/txt_offers_desc"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/text_16"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

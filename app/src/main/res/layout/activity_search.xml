@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.search.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/ToolbarSearchStyle">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_search_"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_27"
+            android:layout_marginEnd="@dimen/dimens_5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/app_txt_white"
+            app:cardCornerRadius="@dimen/dimens_5">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_menu_search"
+                style="@style/search_iconStyle"
+                android:layout_marginStart="@dimen/dimens_5"
+                android:layout_gravity="start|center"
+                app:srcCompat="@drawable/ic_search_blue" />
+
+        <com.freshbasket.customer.customviews.EditTextWithClear
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_25"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="@dimen/dimens_15"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:background="@null"
+            android:hint="@string/search_prdct"
+            android:textColorHint="@color/grey_hint_color"
+            android:cursorVisible="true"
+            android:longClickable="false" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/dimens_3"
+        tools:listitem="@layout/partialy_cart_list_item" />
+
+</RelativeLayout>

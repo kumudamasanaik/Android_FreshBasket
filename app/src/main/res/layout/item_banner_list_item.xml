@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@color/temp_bg_color"
+    android:scaleType="fitXY" />
+<!--
+    android:src="@drawable/dummy_fruits_image"
+-->

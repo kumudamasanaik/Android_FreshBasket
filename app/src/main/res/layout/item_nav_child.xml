@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlns="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_40"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="@color/nav_child_bg"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    mlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dimens_20"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_nav_icon"
+            style="@style/navi_drawer_image_style"
+            android:tint="@color/color_light_blue"
+            android:visibility="gone" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            style="@style/navi_drawer_items_style"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dimens_5"
+            android:fontFamily="@font/calibree_medium"
+            android:layout_toEndOf="@+id/iv_nav_icon" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

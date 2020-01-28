@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout_select_address"
+        android:layout_margin="@dimen/dimens_3"
+        tools:listitem="@layout/items_delivery_address" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout_select_address"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimens_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_light_blue"
+       >
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dimens_25"
+            android:fontFamily="@font/calibree_bold"
+            android:text="@string/total_amount"
+            android:textColor="@color/app_txt_white"
+            android:textSize="@dimen/text_18" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_mrp_price"
+            style="@style/product_price_style"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimens_3"
+            android:layout_toEndOf="@+id/tv_total"
+            android:fontFamily="@font/calibree_bold"
+            android:textColor="@color/app_txt_white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_check_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:fontFamily="@font/calibree_bold"
+            android:gravity="center"
+            android:text="@string/continue_txt"
+            android:textColor="@color/app_txt_white"
+            android:textSize="@dimen/text_18" />
+        <!--android:drawableEnd="@drawable/ic_right_arrow"-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

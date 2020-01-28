@@ -1,0 +1,40 @@
+package com.freshbasket.customer.model
+
+data class Customer(
+        val _id: String? = "",
+        val aadhar_pic: String? = "",
+        val app_version: String? = "",
+        val bank_acc_number: String? = "",
+        val birthday: String? = "",
+        val customer_type: String? = "",
+        val email: String? = "",
+        val email_verified: String? = "",
+        val facebook_id: String? = "",
+        val first_name: String? = "",
+        val gender: String? = "",
+        val google_id: String? = "",
+        val ifsc_code: String? = "",
+        val last_name: String? = "",
+        val linkedin_id: String? = "",
+        val mobile: String? = "",
+        val news_letter: String? = "",
+        val note: String? = "",
+        val otp: String? = "",
+        val pancard_pic: String? = "",
+        val pic: String? = "",
+        val referral_applied: String? = "",
+        val referral_code: String? = "",
+        val referral_used: String? = "",
+        val referred_amount: String? = "",
+        val referred_by: String? = "",
+        val referred_code: String? = "",
+        val verified: String? = "",
+        val wallet: String? = "",
+        val website: String? = "",
+
+        val added: Any? = "",
+        val block: String? = "",
+        val password: String? = "",
+        val updated: String? = ""
+
+) : CommonRes()

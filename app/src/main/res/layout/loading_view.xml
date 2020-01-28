@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimens_12"
+    android:paddingTop="@dimen/multistate_view_top_padding"
+    android:paddingRight="@dimen/dimens_12"
+    android:paddingBottom="@dimen/dimens_12">
+
+    <com.freshbasket.customer.customviews.progressbar.CircleProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading_pBar"
+        android:layout_width="@dimen/dimens_70"
+        android:layout_height="@dimen/dimens_70"
+        android:layout_gravity="center"
+        app:mlpb_arrow_height="@dimen/dimens_3"
+        app:mlpb_arrow_width="@dimen/dimens_8"
+        app:mlpb_enable_circle_background="false"
+        app:mlpb_progress_color="?attr/colorPrimary"
+        app:mlpb_progress_stoke_width="@dimen/dimens_2"
+        app:mlpb_progress_text_color="@color/colorPrimary"
+        app:mlpb_progress_text_visibility="invisible"
+        app:mlpb_show_arrow="false" />
+</LinearLayout>
